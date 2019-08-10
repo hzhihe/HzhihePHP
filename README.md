@@ -40,7 +40,7 @@ include APP_PATH . 'HzhihePHP/HzhihePHP.php';
         RewriteEngine On
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteCond %{REQUEST_FILENAME} !-d
-        RewriteRule ^(.*)$ index.php?/=$1 [PT,NC]
+        RewriteRule ^(.*)$ index.php/$1 [PT,NC]
     </IfModule>
 
 // ---------------------------------------
